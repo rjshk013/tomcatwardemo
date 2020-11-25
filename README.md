@@ -14,3 +14,8 @@ Steps to deploy war file from jenkins docker container  to tomcat container:
 2.The generated waf rom jenkinsserver/workspace locattion to be deployed on remote tomcat servers webapps folder using Deploy to container plugin
 3.Tomcat manager credentials must be given propely
 4.Here no nexus configured ,no Jdk extra configured as jenkins server  & tomcat servers comes with java installed .
+
+scenario & environment
+------------------------
+jenkins & tomcat are running docker containers on same local ubuntu machine.
+war file is directly deployed from jenkins server to tomcat server webapps folder
