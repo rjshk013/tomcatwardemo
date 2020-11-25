@@ -57,3 +57,5 @@ Configure pipeline script :
 
 Given maven tool name as per configured .Here i have given name as Mavenlatest
 Since nexus is running docker ,give your local machine ip with port 
+
+To get more info refer: https://dzone.com/articles/jenkins-publish-maven-artifacts-to-nexus-oss-using
