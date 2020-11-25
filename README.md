@@ -19,3 +19,11 @@ scenario & environment
 ------------------------
 jenkins & tomcat are running docker containers on same local ubuntu machine.
 war file is directly deployed from jenkins server to tomcat server webapps folder
+
+setup tomcat docker container:
+-----------------------------
+
+You can create tomcat server in two ways 
+1.First pull centos docker image and install latest tomcat into it and run as container
+link:https://medium.com/appfleet/deploy-application-using-jenkins-tomcat-server-and-pollscm-4d358fa0d6ee
+2.use the Dockerfile from the repo to run tomcat container (no need to pull centos & install java & tomcat as it already contains)
