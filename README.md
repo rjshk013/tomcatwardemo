@@ -4,12 +4,12 @@ Sample Tomcat Maven App
 
 This repo contains sample war file for deploying into any tomcat servers 
 
-give contname as tomcatwardemo
 
 referrence blog : https://www.middlewareinventory.com/blog/jenkins-tomcat-deploy-deploying-application-tomcat-using-jenkins/
 
 Test war is working :
 --------------------
+Since the war file name is TomcatMavenApp need to enter its name
 http://localhost:8098/TomcatMavenApp/
 
 Steps to deploy war file from jenkins docker container  to tomcat container:
