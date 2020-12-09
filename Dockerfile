@@ -11,8 +11,10 @@ RUN mv apache-tomcat-8.5.60/* /opt/tomcat/.
 RUN yum -y install java-1.8.0-openjdk
 RUN java -version
 
-WORKDIR /opt/tomcat/webapps
-
+WORKDIR /opt/tomcat/
+COPY context.xml /opt/tomcat/webapps/host-manager/META-INF/context.xml
+COPY context.xml /opt/tomcat/webapps/manager/META-INF/context.xml
+COPY tomcat-users.xml /opt/tomcat/conf
 
 EXPOSE 8080
 
