@@ -59,6 +59,12 @@ Note:You cannot use custom volume like /home or /opt infront of tomcat volume.
 got to browser http://localhost:8098 click manager app --> use the useranme & passwords given in the roles="manager-gui"/> and try to login
 
 
+docker-compose_tomcat.yml
+-------------------------
+
+This will create docker container as per our configuration.The location of Dockerfile will be inside of server folder  
+
+
 Publishing Artifacts to Sonatype Nexus using Jenkins Pipelines:
 ----------------------------------------------------------------
 Reference: https://appfleet.com/blog/publishing-artifacts-to-nexus-using-jenkins-pipelines/
