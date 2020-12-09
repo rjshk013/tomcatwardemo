@@ -62,7 +62,7 @@ got to browser http://localhost:8098 click manager app --> use the useranme & pa
 docker-compose_tomcat.yml
 -------------------------
 
-This will create docker container as per our configuration.The location of Dockerfile will be inside of server folder  
+This will create docker container as per our configuration.The location of Dockerfile will be inside of server folder or If all the folders in the current folder you can give . 
 
 
 Publishing Artifacts to Sonatype Nexus using Jenkins Pipelines:
