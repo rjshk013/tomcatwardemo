@@ -19,6 +19,19 @@ Steps to deploy war file from jenkins docker container  to tomcat container:
 3.Tomcat manager credentials must be given propely
 4.Here no nexus configured ,no Jdk extra configured as jenkins server  & tomcat servers comes with java installed .
 5.Maven integration Plugin,Maven tools must be installed 
+6.configure jenkins:
+
+build :
+
+ 	Goals and options : clean install
+Post-build Actions section--->Add post-build action -->Deploy war/ear to container
+
+WAR/EAR files : **/*.war
+Context path: noramlly the gitrepofolder whrer the war file present . in this case  tomcatwardemo
+Containers : select as per tomcat version like tomcat.8.x .
+give credentailas as per configured previously on manage credentail section in jenkins 
+Tomcat URL : http://ip:8098 ,if your tomcat docker containers running on local machine give its internal ip with port
+
 
 scenario & environment
 ------------------------
