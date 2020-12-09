@@ -45,15 +45,18 @@ You can create tomcat server in two ways
 1.First pull centos docker image and install latest tomcat into it and run as container
 link:https://medium.com/appfleet/deploy-application-using-jenkins-tomcat-server-and-pollscm-4d358fa0d6ee
 2.use the Dockerfile from the repo to run tomcat container (no need to pull centos & install java & tomcat as it already contains)
-3.Build tomcat image from the Dockerfile
+3.context.xml & tomcat-users.xml files are present in same folder.You may need to change manager-ui credentials if want.
+4.Build tomcat image from the Dockerfile
 
 docker build -t raju/tomcat8 .
 
-4.Run tomcat docker container 
+5.Run tomcat docker container 
 
 docker run -d -p 8099:8080 --name tomcat8_dockercontainer -v tomcat8data:/opt/tomcat raju/tomcat8:latest
 
 Note:You cannot use custom volume like /home or /opt infront of tomcat volume.
+6.check tomcat manager ui access
+got to browser http://localhost:8098 click manager app --> use the useranme & passwords given in the roles="manager-gui"/> and try to login
 
 
 Publishing Artifacts to Sonatype Nexus using Jenkins Pipelines:
