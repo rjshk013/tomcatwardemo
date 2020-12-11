@@ -111,6 +111,13 @@ On the Create Repository page,
     Roles: Make sure that you grant the nx-admin role to your user.
 
 
+Install and Configure Nexus Plugins in Jenkins:
+- Nexus Artifact Uploader
+- Pipeline Utility Steps
+
+Add Nexus Repository Manager’s user credentials in Jenkins. Go to Dashboard > Credentials > System > Global credentials (unrestricted)
+
+set up Maven as a managed tool -Ignore if it is already configured 
 Configure pipeline script :
 
 Given maven tool name as per configured .Here i have given name as Mavenlatest
