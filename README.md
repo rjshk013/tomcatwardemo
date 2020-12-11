@@ -72,8 +72,9 @@ This will create a nexus repository docker container and jenkins will upload bui
 
 Steps to create nexus docker container:
 ----------------------------------------
-
+pull nexus docker image:
 docker pull sonatype/nexus3
+
 docker run -d --name nexus_repo -p 8081:8081 sonatype/nexus3
 
 check nexus server starting status :
