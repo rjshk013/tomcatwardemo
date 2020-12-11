@@ -90,6 +90,26 @@ docker exec -i nexus_repo cat /nexus-data/admin.password
 After that set a new password
 
 Follow the blog article below
+1.Create a repository
+
+go to Settings button(server configuration)--create repository --Select maven2 (hosted) recipe from the list ..>
+On the Create Repository page,
+
+    Enter the name as maven-nexus-repo
+    In Version Policy, select the Mixed type of artifacts.
+    Under the Hosted section, in Deployment policy, select Allow redeploy
+    
+    To create a new user, go to Dashboard > Server Administrator and Configuration > User > Create user. Select Local user type which happens to be the default Realm:
+    
+    In the Create User page,
+
+    ID: Enter the desired ID; in our case, it is jenkins-user.
+    First Name: Enter the desired first name; in our case, it is Jenkins.
+    Last Name: Enter the desired second name; in our case, it is User.
+    Email: Enter your email address.
+    Status: Select Active from your drop-down menu.
+    Roles: Make sure that you grant the nx-admin role to your user.
+
 
 Configure pipeline script :
 
