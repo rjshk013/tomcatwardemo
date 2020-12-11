@@ -118,6 +118,7 @@ Install and Configure Nexus Plugins in Jenkins:
 Add Nexus Repository Manager’s user credentials in Jenkins. Go to Dashboard > Credentials > System > Global credentials (unrestricted)
 
 set up Maven as a managed tool -Ignore if it is already configured 
+Create job as pipeline project 
 Configure pipeline script :
 
 Given maven tool name as per configured .Here i have given name as Mavenlatest
